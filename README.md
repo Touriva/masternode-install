@@ -101,7 +101,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
 ![Example-RootPassEnter](https://i.imgur.com/vuDtUVj.png)
 
-`wget https://github.com/YellowFeveRs/Tour-1/blob/master/mn_setup.sh`
+`wget https://raw.githubusercontent.com/YellowFeveRs/Tour-1/master/mn_setup.sh`
 ***
 
 ***Step 8***
