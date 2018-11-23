@@ -2,16 +2,16 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='tour.conf'
-CONFIGFOLDER='/root/.tourcore'
+CONFIGFOLDER='/root/.tour'
 COIN_DAEMON='tourd'
 COIN_CLI='tour-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/TourcoinGroup/Tourcoin.git'
-COIN_TGZ='https://github.com/TourcoinGroup/Tourcoin/releases/download/1.0.0.3/tour_linux.zip'
+COIN_TGZ='https://github.com/r4nto/TOUR-mn-install/releases/download/1.0.0/TOUR.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Tour'
-COIN_PORT=11093
-RPC_PORT=11091
+COIN_PORT=5457
+RPC_PORT=5456
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -107,11 +107,10 @@ EOF
 
 function create_config() {
   mkdir $CONFIGFOLDER >/dev/null 2>&1
-  RPCUSER=$(tr -cd '[:alnum:]' < /dev/urandom | fold -w10 | head -n1)
-  RPCPASSWORD=$(tr -cd '[:alnum:]' < /dev/urandom | fold -w22 | head -n1)
+  
   cat << EOF > $CONFIGFOLDER/$CONFIG_FILE
-rpcuser=$RPCUSER
-rpcpassword=$RPCPASSWORD
+
+
 rpcport=$RPC_PORT
 rpcallowip=127.0.0.1
 listen=1
@@ -148,7 +147,7 @@ function update_config() {
   cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
 logintimestamps=1
 maxconnections=256
-#bind=$NODEIP
+bind=$NODEIP
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
