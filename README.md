@@ -4,7 +4,7 @@ This guide will assist you in setting up a Tour Masternode on a Linux Server run
 If you require further assistance contact the support team @ [Discord](https://discord.gg/SeS8hJe)
 ***
 ## Requirements
-1) **1,000 TOUR coins.**
+1) **500 TOUR coins.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**
@@ -132,11 +132,11 @@ If you require further assistance contact the support team @ [Discord](https://d
 ## Section D: Preparing the Local wallet
 
 ***Step 1***
-* Download and install the Tour wallet [here](https://github.com/TourcoinGroup/Tourcoin/releases)
+* Download and install the Tour wallet [here](https://github.com/TourcoinGroup/TOUR/releases)
 ***
 
 ***Step 2***
-* Send EXACLY 1,000 TOUR to a receive address within your wallet.
+* Send EXACLY 500 TOUR to a receive address within your wallet.
 ***
 
 ***Step 3***
