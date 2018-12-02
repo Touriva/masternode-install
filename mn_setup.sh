@@ -6,8 +6,8 @@ CONFIGFOLDER='/root/.tour'
 COIN_DAEMON='tourd'
 COIN_CLI='tour-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/TourcoinGroup/Tourcoin.git'
-COIN_TGZ='https://github.com/r4nto/TOUR-mn-install/releases/download/1.0.0/TOUR.zip'
+COIN_REPO='https://github.com/TourcoinGroup/TOUR.git'
+COIN_TGZ='https://github.com/r4nto/TOUR-mn-install/releases/download/1.0.1/TOUR.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Tour'
 COIN_PORT=5457
@@ -17,7 +17,7 @@ NODEIP=$(curl -s4 icanhazip.com)
 
 BLUE="\033[0;34m"
 YELLOW="\033[0;33m"
-CYAN="\033[0;36m" 
+CYAN="\033[0;36m"
 PURPLE="\033[0;35m"
 RED='\033[0;31m'
 GREEN="\033[0;32m"
@@ -29,10 +29,10 @@ purgeOldInstallation() {
     #kill wallet daemon
     sudo killall tourd > /dev/null 2>&1
     #remove old ufw port allow
-    sudo ufw delete allow 8093/tcp > /dev/null 2>&1
+    sudo ufw delete allow 5457/tcp > /dev/null 2>&1
     #remove old files
-    if [ -d "~/.tourcore" ]; then
-        sudo rm -rf ~/.tourcore > /dev/null 2>&1
+    if [ -d "~/.tour" ]; then
+        sudo rm -rf ~/.tour > /dev/null 2>&1
     fi
     #remove binaries and Tour utilities
     cd /usr/local/bin && sudo rm tour-cli tour-tx tourd > /dev/null 2>&1 && cd
@@ -107,7 +107,7 @@ EOF
 
 function create_config() {
   mkdir $CONFIGFOLDER >/dev/null 2>&1
-  
+
   cat << EOF > $CONFIGFOLDER/$CONFIG_FILE
 
 
@@ -289,4 +289,3 @@ checks
 prepare_system
 download_node
 setup_node
-
