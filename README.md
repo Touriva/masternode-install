@@ -72,6 +72,9 @@ If you require further assistance contact the support team @ [Discord](https://d
 * Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server.
 ![Example-Vultr](https://i.imgur.com/z41MiwY.png)
 ***
+
+***Mac***
+
 *If you are on mac simply open terminal and type  `ssh root@ip*`
 
 *replace ip with your vps's ip 
