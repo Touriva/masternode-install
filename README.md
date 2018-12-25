@@ -7,7 +7,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 1) **500 TOUR coins.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
-4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**
+4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
 ***
 ## Contents
 * **Section A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7515970).
@@ -72,7 +72,14 @@ If you require further assistance contact the support team @ [Discord](https://d
 * Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server.
 ![Example-Vultr](https://i.imgur.com/z41MiwY.png)
 ***
+*If you are on mac simply open terminal and type  `ssh root@ip*`
 
+*replace ip with your vps's ip 
+
+when promted to put in the password simply copy your vps's password and paste it in 
+
+you can go to ***Step 7***
+ 
 ***Step 2***
 * Open the bitvise application and fill in the "Hostname" box with the IP of your VPS.
 ![Example-PuttyInstaller](https://i.imgur.com/vkN1alC.png)
@@ -101,7 +108,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
 ![Example-RootPassEnter](https://i.imgur.com/vuDtUVj.png)
 
-`wget https://raw.githubusercontent.com/r4nto/TOUR-mn-install/master/mn_setup.sh`
+`wget https://raw.githubusercontent.com/YellowFeveRs/Tour-1/master/mn_setup.sh`
 ***
 
 ***Step 8***
