@@ -8,6 +8,13 @@ If you require further assistance contact the support team @ [Discord](https://d
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
+
+## Recommended specs per X amount of nodes:
+1) **Per GB of ram: 4 nodes**
+2) **Per CPU core: 6 to 8 nodes (depends on how good the CPU is)**
+
+***note that these are just recommendations if you want to add more nodes it can result in instability***
+
 ***
 ## Contents
 * **Section A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7515970).
@@ -77,12 +84,12 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 *If you are on mac simply open terminal and type  `ssh root@ip*`
 
-*replace ip with your vps's ip 
+*replace ip with your vps's ip
 
-when promted to put in the password simply copy your vps's password and paste it in 
+when promted to put in the password simply copy your vps's password and paste it in
 
 you can go to ***Step 7***
- 
+
 ***Step 2***
 * Open the bitvise application and fill in the "Hostname" box with the IP of your VPS.
 ![Example-PuttyInstaller](https://i.imgur.com/vkN1alC.png)
@@ -111,33 +118,10 @@ you can go to ***Step 7***
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
 ![Example-RootPassEnter](https://i.imgur.com/vuDtUVj.png)
 
-`wget https://raw.githubusercontent.com/YellowFeveRs/Tour-1/master/mn_setup.sh`
-***
+`bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc`
 
 ***Step 8***
-* Paste the code below into the Bitvise terminal then press enter
-
-`bash ./mn_setup.sh`
-
-![Example-Bash](https://i.imgur.com/myvmKTE.png)
-
-***
-
-***Step 9***
-* Sit back and wait for the install (this will take 10-20 mins)
-***
-
-***Step 10***
-* When prompted to enter your GEN key - press enter
-
-![Example-installing](https://i.imgur.com/sLvWd1S.png)
-***
-
-***Step 11***
-* You will now see all of the relavant information for your server.
-* Keep this terminal open as we will need the info for the wallet setup.
-![Example-installing](https://i.imgur.com/Q87LcnW.png)
-***
+* follow the instructions given by the script
 
 ## Section D: Preparing the Local wallet
 
@@ -149,17 +133,8 @@ you can go to ***Step 7***
 * Send EXACLY 500 TOUR to a receive address within your wallet.
 ***
 
+***
 ***Step 3***
-* Create a text document to temporarily store information that you will need.
-***
-
-***step 4***
-* Go to the console within the wallet
-
-![Example-console](https://i.imgur.com/6NM7G9a.png)
-***
-
-***Step 5***
 * Type the command below and press enter
 
 `masternode outputs`
@@ -167,10 +142,10 @@ you can go to ***Step 7***
 ![Example-outputs](https://i.imgur.com/GD7Ro1m.png)
 ***
 
-***Step 6***
-* Copy the long key (this is your transaction ID) and the 0 or 1 at the end (this is your output index)
-* Paste these into the text document you created earlier as you will need them in the next step.
+***Step 4***
+* Copy the long key and paste it into your terminal The script will do take care of it
 ***
+
 
 # Section E: Connecting & Starting the masternode
 
@@ -180,13 +155,8 @@ you can go to ***Step 7***
 ***
 
 ***Step 2***
+When the Scirpt on your VPS is done it will give you a long key copy this and paste it into your "masternode configuration file"
 
-* Fill in the form.
-* For `Alias` type something like "MN01" **don't use spaces**
-* The `Address` is the IP and port of your server (this will be in the Bitvise terminal that you still have open).
-* The `PrivKey` is your masternode private key (This is also in the Bitvise terminal that you have open).
-* The `TxHash` is the transaction ID/long key that you copied to the text file.
-* The `Output Index` is the 0 or 1 that you copied to your text file.
 ![Example-create](https://i.imgur.com/9b1I3bk.png)
 
 Click "File Save"
@@ -199,13 +169,26 @@ Click "File Save"
 ***
 
 ***step 4***
-* Check the status of your masternode within the VPS by using the command below:
 
-`tour-cli masternode status`
+* to restart a masternode
+`tour_mnX restart`
+***replace X with the node you want to restart***
 
-`tour-cli getinfo`
+The script will update the wallet automatically
 
-*You should see ***masternode succesfuly started***
+# Section F: installing another masternode on the same VPS
 
-If you do, congratulations! You have now setup a masternode. If you do not, please contact support and they will assist you.  
+***step 1***
+
+* Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
+![Example-RootPassEnter](https://i.imgur.com/vuDtUVj.png)
+
+`bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc`
+
+***Step 2***
+* follow the instructions given by the script
+
+***Step 3*** repeat the steps form section E
+
+
 ***
