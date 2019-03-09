@@ -9,7 +9,7 @@
 # Run this file
 
 ```
-bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/mikeytown2/masternode/master/tourd.sh)" ; source ~/.bashrc
+bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc
 ```
 
 '
@@ -109,4 +109,3 @@ DAEMON_SETUP_THREAD
 # shellcheck source=/root/.bashrc
 . ~/.bashrc
 stty sane 2>/dev/null
-
