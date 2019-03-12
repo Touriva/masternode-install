@@ -20,16 +20,16 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 ***
 ## Contents
-* **Section A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7515970).
+* **Section A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7876955-4F).
 * **Section B**: Downloading and installing Bitvise.
 * **Section C**: Connecting to the VPS and installing the MN script via Bitvise.
 * **Section D**: Preparing the local wallet.
 * **Section E**: Connecting & Starting the masternode.
 ***
 
-## Section A: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7515970)
+## Section A: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7876955-4F)
 ***Step 1***
-* Register at [Vultr](https://www.vultr.com/?ref=7515970)
+* Register at [Vultr](https://www.vultr.com/?ref=7876955-4F)
 ***
 
 ***Step 2***
