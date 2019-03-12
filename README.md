@@ -2,6 +2,8 @@
 This guide will assist you in setting up a Tour Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
 
 If you require further assistance contact the support team @ [Discord](https://discord.gg/SeS8hJe)
+
+## ***note at this moment in time it is not possible to run more then 1 node per VPS*** 
 ***
 ## Requirements
 1) **500 TOUR coins.**
