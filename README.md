@@ -3,7 +3,7 @@ This guide will assist you in setting up a Tour Masternode on a Linux Server run
 
 If you require further assistance contact the support team @ [Discord](https://discord.gg/SeS8hJe)
 
-## ***note at this moment in time it is not possible to run more then 1 node per VPS*** 
+## ***note at this moment in time it is not possible to run more then 1 node per VPS***
 ***
 ## Requirements
 1) **500 TOUR coins.**
@@ -11,9 +11,10 @@ If you require further assistance contact the support team @ [Discord](https://d
 3) **A Windows local wallet.**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
 
-## Recommended specs per X amount of nodes:
+## Recommended specs per X amount of Masternodes:
 1) **Per GB of ram: 4 nodes**
 2) **Per CPU core: 6 to 8 nodes (depends on how good the CPU is)**
+3) **Make sure that your VPS has a good internet connection with a low ping**
 
 ***note that these are just recommendations if you want to add more nodes it can result in instability***
 
