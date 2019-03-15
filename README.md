@@ -26,7 +26,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 * **Section D**: Preparing the local wallet.
 * **Section E**: Connecting & Starting the masternode.
 
-***if you sign up through our reveral link you will recieve a free $50 credit ones you link your credit card or paypal simply***
+***If you sign up through our reveral link you will recieve a free $50 credit ones you link your credit card or paypal simply***
 ***[Reveral link](https://www.vultr.com/?ref=7876955-4F)***
 
 ***
