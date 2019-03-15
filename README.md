@@ -25,6 +25,10 @@ If you require further assistance contact the support team @ [Discord](https://d
 * **Section C**: Connecting to the VPS and installing the MN script via Bitvise.
 * **Section D**: Preparing the local wallet.
 * **Section E**: Connecting & Starting the masternode.
+
+***if you sign up through our reveral code you will recieve a free $50 credit ones you link your credit card or paypal simply***
+***[Reveral link](https://www.vultr.com/?ref=7876955-4F)***
+
 ***
 
 ## Section A: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7876955-4F)
