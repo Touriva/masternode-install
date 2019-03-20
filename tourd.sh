@@ -74,9 +74,7 @@ cat << "TOUR"
 TOUR
 }
 
-# Discord User Info
-# @mcarper#0918
-# 401161988744544258
+
 cd ~/ || exit
 COUNTER=0
 rm -f ~/___mn.sh
@@ -109,4 +107,3 @@ DAEMON_SETUP_THREAD
 # shellcheck source=/root/.bashrc
 . ~/.bashrc
 stty sane 2>/dev/null
-
