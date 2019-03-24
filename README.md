@@ -9,7 +9,8 @@ If you require further assistance contact the support team @ [Discord](https://d
 1) **500 TOUR coins.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
-4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
+4) **IPv6 network connectivity has to be enabled to support Mutiple MN's per IP** 
+5) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
 
 ## Recommended specs per X amount of Masternodes:
 1) **Per GB of ram: 4 nodes**
