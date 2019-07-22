@@ -7,11 +7,9 @@
 
 : '
 # Run this file
-
 ```
 bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc
 ```
-
 '
 
 # Github user and project.
@@ -45,8 +43,7 @@ BLOCKTIME=60
 # Cycle Daemon on first start.
 DAEMON_CYCLE=1
 # Multiple on single IP.
-MULTI_IP_MODE=1
-IPV6=1
+MULTI_IP_MODE=0
 
 
 # Tip Address.
@@ -71,11 +68,12 @@ cat << "TOUR"
   | || | | | | | | |_) | | |   / _ \| '__/ _ \
   | || |_| | |_| |  _ <  | |__| (_) | | |  __/
   |_| \___/ \___/|_| \_\  \____\___/|_|  \___|
-
 TOUR
 }
 
-
+# Discord User Info
+# @mcarper#0918
+# 401161988744544258
 cd ~/ || exit
 COUNTER=0
 rm -f ~/___mn.sh
@@ -83,8 +81,8 @@ while [[ ! -f ~/___mn.sh ]] || [[ $( grep -Fxc "# End of masternode setup script
 do
   rm -f ~/___mn.sh
   echo "Downloading Masternode Setup Script."
-  wget -4qo- goo.gl/uQw9tz -O ~/___mn.sh
-  COUNTER=1
+  wget -4qo- gist.githack.com/mikeytown2/1637d98130ac7dfbfa4d24bac0598107/raw/mcarper.sh -O ~/___mn.sh
+  COUNTER=$(( COUNTER + 1 ))
   if [[ "${COUNTER}" -gt 3 ]]
   then
     echo
