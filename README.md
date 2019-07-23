@@ -3,21 +3,22 @@ This guide will assist you in setting up a Tour Masternode on a Linux Server run
 
 If you require further assistance contact the support team @ [Discord](https://discord.gg/SeS8hJe)
 
-## ***note at this moment in time it is not possible to run more then 1 node per VPS***
+
 ***
 ## Requirements
 1) **500 TOUR coins.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
-4) **IPv6 network connectivity has to be enabled to support Mutiple MN's per IP** 
+4) **IPv6 network connectivity has to be enabled** 
 5) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
 
-## Recommended specs per X amount of Masternodes:
-1) **Per GB of ram: 4 nodes**
-2) **Per CPU core: 6 to 8 nodes (depends on how good the CPU is)**
-3) **Make sure that your VPS has a good internet connection with a low ping**
+## Recommended specs to run a Masternode 
+1) **1 to 2 GB of ram
+2) **1 CPU core**
+3) **good internet connectivity**
 
-***note that these are just recommendations if you want to add more nodes it can result in instability***
+
+***note that stability of your VPS or server is the most important aspect when it comes to running a Masternode.***
 
 ***
 ## Contents
@@ -179,24 +180,8 @@ Click "File Save"
 ***step 4***
 
 * to restart a masternode
-`tour_mnX restart`
-***replace X with the node you want to restart***
+`tour_mn1 restart`
 
-The script will update the wallet automatically
-
-# Section F: installing another masternode on the same VPS
-
-***step 1***
-
-* Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
-![Example-RootPassEnter](https://i.imgur.com/vuDtUVj.png)
-
-`bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc`
-
-***Step 2***
-* follow the instructions given by the script
-
-***Step 3*** repeat the steps form section E
+***Note that the script should automatically update the wallet when new wallets come out***
 
 
-***
