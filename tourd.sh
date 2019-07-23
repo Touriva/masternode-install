@@ -8,7 +8,7 @@
 : '
 # Run this file
 ```
-bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc
+bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour/1/master/tourd.sh)" ; source ~/.bashrc
 ```
 '
 
@@ -51,7 +51,7 @@ TIPS='TW1EvMNptSoTWtYdNZdKTWWzqepYPvpHbk'
 # Dropbox Addnodes.
 DROPBOX_ADDNODES='a37pqfaxmf1kfdv'
 # If set to 1 then use addnodes from dropbox.
-USE_DROPBOX_ADDNODES=1
+USE_DROPBOX_ADDNODES=0
 # Dropbox Bootstrap.
 DROPBOX_BOOTSTRAP='51ltqsreqz7hw1s'
 # If set to 1 then use bootstrap from dropbox.
