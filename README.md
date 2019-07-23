@@ -13,7 +13,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 5) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
 
 ## Recommended specs to run a Masternode 
-1) **1 to 2 GB of ram
+1) **1 to 2 GB of ram**
 2) **1 CPU core**
 3) **good internet connectivity**
 
