@@ -13,7 +13,7 @@ bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/
 '
 
 # Github user and project.
-GITHUB_REPO='TourcoinGroup/TOUR'
+GITHUB_REPO='Touriva/TOUR'
 # Display Name.
 DAEMON_NAME='TOUR Core'
 # Coin Ticker.
