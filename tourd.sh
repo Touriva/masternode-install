@@ -8,7 +8,7 @@
 : '
 # Run this file
 ```
-bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour/1/master/tourd.sh)" ; source ~/.bashrc
+bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc
 ```
 '
 
