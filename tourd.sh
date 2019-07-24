@@ -7,13 +7,15 @@
 
 : '
 # Run this file
+
 ```
-bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc
+bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/mikeytown2/masternode/master/tourd.sh)" ; source ~/.bashrc
 ```
+
 '
 
 # Github user and project.
-GITHUB_REPO='Touriva/TOUR'
+GITHUB_REPO='TourcoinGroup/TOUR'
 # Display Name.
 DAEMON_NAME='TOUR Core'
 # Coin Ticker.
@@ -50,12 +52,8 @@ MULTI_IP_MODE=0
 TIPS='TW1EvMNptSoTWtYdNZdKTWWzqepYPvpHbk'
 # Dropbox Addnodes.
 DROPBOX_ADDNODES='a37pqfaxmf1kfdv'
-# If set to 1 then use addnodes from dropbox.
-USE_DROPBOX_ADDNODES=0
 # Dropbox Bootstrap.
 DROPBOX_BOOTSTRAP='51ltqsreqz7hw1s'
-# If set to 1 then use bootstrap from dropbox.
-USE_DROPBOX_BOOTSTRAP=1
 # Dropbox blocks and chainstake folders.
 DROPBOX_BLOCKS_N_CHAINS='lefeex41x0agab1'
 
@@ -68,6 +66,7 @@ cat << "TOUR"
   | || | | | | | | |_) | | |   / _ \| '__/ _ \
   | || |_| | |_| |  _ <  | |__| (_) | | |  __/
   |_| \___/ \___/|_| \_\  \____\___/|_|  \___|
+
 TOUR
 }
 
@@ -106,3 +105,4 @@ DAEMON_SETUP_THREAD
 # shellcheck source=/root/.bashrc
 . ~/.bashrc
 stty sane 2>/dev/null
+
