@@ -15,7 +15,7 @@ bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/mikeytown2/masternode/maste
 '
 
 # Github user and project.
-GITHUB_REPO='TourcoinGroup/TOUR'
+GITHUB_REPO='Touriva/TOUR'
 # Display Name.
 DAEMON_NAME='TOUR Core'
 # Coin Ticker.
