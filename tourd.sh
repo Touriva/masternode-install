@@ -7,11 +7,9 @@
 
 : '
 # Run this file
-
 ```
-bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc
+bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/TOUR-1/github/tourd.sh)" ; source ~/.bashrc
 ```
-
 '
 
 # Github user and project.
@@ -45,17 +43,17 @@ BLOCKTIME=60
 # Cycle Daemon on first start.
 DAEMON_CYCLE=1
 # Multiple on single IP.
-MULTI_IP_MODE=1
+MULTI_IP_MODE=3
 
 
 # Tip Address.
 TIPS='TW1EvMNptSoTWtYdNZdKTWWzqepYPvpHbk'
 # Dropbox Addnodes.
-DROPBOX_ADDNODES='a37pqfaxmf1kfdv'
+DROPBOX_ADDNODES='https://raw.githubusercontent.com/YellowFeveRs/Tour-1/master/res/peers_1.txt'
 # Dropbox Bootstrap.
-DROPBOX_BOOTSTRAP='51ltqsreqz7hw1s'
+DROPBOX_BOOTSTRAP='https://github.com/YellowFeveRs/Tour-1/raw/master/res/bootstrap.dat.gz'
 # Dropbox blocks and chainstake folders.
-DROPBOX_BLOCKS_N_CHAINS='lefeex41x0agab1'
+DROPBOX_BLOCKS_N_CHAINS='https://github.com/YellowFeveRs/Tour-1/raw/master/res/blocks_n_chains.tar.gz'
 
 ASCII_ART () {
 echo -e "\e[0m"
@@ -66,7 +64,6 @@ cat << "TOUR"
   | || | | | | | | |_) | | |   / _ \| '__/ _ \
   | || |_| | |_| |  _ <  | |__| (_) | | |  __/
   |_| \___/ \___/|_| \_\  \____\___/|_|  \___|
-
 TOUR
 }
 
@@ -105,4 +102,3 @@ DAEMON_SETUP_THREAD
 # shellcheck source=/root/.bashrc
 . ~/.bashrc
 stty sane 2>/dev/null
-
