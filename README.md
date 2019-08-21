@@ -127,7 +127,7 @@ you can go to ***Step 7***
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
 ![Example-RootPassEnter](https://i.imgur.com/vuDtUVj.png)
 
-`bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc`
+`bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/github/tourd.sh)" ; source ~/.bashrc`
 
 ***Step 8***
 * follow the instructions given by the script
