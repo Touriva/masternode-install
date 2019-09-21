@@ -3,13 +3,14 @@ This guide will assist you in setting up a Tour Masternode on a Linux Server run
 
 If you require further assistance contact the support team @ [Discord](https://discord.gg/SeS8hJe)
 
+***Note that you can only run one masternode per VPS***
+
 
 ***
 ## Requirements
 1) **500 TOUR coins.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
-3) **A Windows local wallet.**
-4) **IPv6 network connectivity has to be enabled** 
+3) **A local wallet.**
 5) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
 
 ## Recommended specs to run a Masternode 
