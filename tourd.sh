@@ -51,11 +51,11 @@ MULTI_IP_MODE=1
 # Tip Address.
 TIPS='TW1EvMNptSoTWtYdNZdKTWWzqepYPvpHbk'
 # Dropbox Addnodes.
-DROPBOX_ADDNODES='a37pqfaxmf1kfdv'
+DROPBOX_ADDNODES='https://raw.githubusercontent.com/MartlnS/Tour-1/master/res/peers_1.txt'
 # Dropbox Bootstrap.
-DROPBOX_BOOTSTRAP='51ltqsreqz7hw1s'
+DROPBOX_BOOTSTRAP='https://github.com/MartlnS/Tour-1/raw/master/res/bootstrap.dat.gz'
 # Dropbox blocks and chainstake folders.
-DROPBOX_BLOCKS_N_CHAINS='lefeex41x0agab1'
+DROPBOX_BLOCKS_N_CHAINS='https://bootstrap.touriva.info/bootstrap-tour.tgz'
 
 ASCII_ART () {
 echo -e "\e[0m"
