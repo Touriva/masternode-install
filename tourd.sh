@@ -9,7 +9,7 @@
 # Run this file
 
 ```
-bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/YellowFeveRs/Tour-1/master/tourd.sh)" ; source ~/.bashrc
+bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/Touriva/masternode-install/master/tourd.sh)" ; source ~/.bashrc
 ```
 
 '
@@ -41,7 +41,7 @@ COLLATERAL=500
 # Direct Daemon Download if github has no releases.
 DAEMON_DOWNLOAD=''
 # Blocktime in seconds.
-BLOCKTIME=60
+BLOCKTIME=120
 # Cycle Daemon on first start.
 DAEMON_CYCLE=1
 # Multiple on single IP.
