@@ -72,6 +72,8 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 ## Section B: Downloading and installing BitVise.
 
+***If you are on Mac continue to the Mac section***
+
 ***Step 1***
 * Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe)
 ***
