@@ -14,7 +14,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 5) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) or Terminal if you are on Mac**
 
 ## Recommended specs to run a Masternode 
-1) **1 to 2 GB of ram**
+1) **1 GB of ram**
 2) **1 CPU core**
 3) **good internet connectivity**
 
@@ -128,7 +128,7 @@ you can go to ***Step 7***
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
 ![Example-RootPassEnter](https://i.imgur.com/vuDtUVj.png)
 
-`bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/MartlnS/Tour-1/master/tourd.sh)" ; source ~/.bashrc`
+`bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/Touriva/masternode-install/master/tourd.sh)" ; source ~/.bashrc`
 
 ***Step 8***
 * follow the instructions given by the script
@@ -136,7 +136,7 @@ you can go to ***Step 7***
 ## Section D: Preparing the Local wallet
 
 ***Step 1***
-* Download and install the Tour wallet [here](https://github.com/TourcoinGroup/TOUR/releases)
+* Download and install the Tour wallet [here](https://github.com/Touriva/TOUR/releases)
 ***
 
 ***Step 2***
