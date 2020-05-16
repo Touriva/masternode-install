@@ -12,6 +12,8 @@ COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Tour'
 COIN_PORT=5457
 RPC_PORT=5456
+COIN_STRAP='http://bootstrap.touriva.info/bootstrap-tour.tgz'
+COIN_ANODE='https://raw.githubusercontent.com/Touriva/masternode-install/master/res/peers_1.txt'
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -280,6 +282,15 @@ function setup_node() {
   configure_systemd
 }
 
+function node_bootstrap() {
+  echo "Retrieving the latest bootstrap.."
+  ( cd $CONFIGFOLDER && curl $COIN_STRAP | tar zxv )
+}
+
+function tour_addnodes() {
+  echo "Configuring add nodes.."
+  curl $COIN_ANODE >> $CONFIGFOLDER/$CONFIG_FILE
+}
 
 ##### Main #####
 clear
@@ -289,3 +300,5 @@ checks
 prepare_system
 download_node
 setup_node
+node_bootstrap
+tour_addnodes
